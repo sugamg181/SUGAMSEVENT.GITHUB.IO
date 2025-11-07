@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sugam’s Event – Making Every Event Memorable</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">Sugam’s Event</div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="booking.html">Book Event</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Making Every Event Memorable</h1>
+        <p>Your dream event, our responsibility — from decoration to management.</p>
+        <a href="booking.html" class="btn">Book Your Event Now</a>
+    </section>
+
+    <!-- Highlights -->
+    <section class="highlights">
+        <div class="box">
+            <h2>🎉 Weddings</h2>
+            <p>Beautiful decorations, perfect arrangements, and stress-free planning.</p>
+        </div>
+        <div class="box">
+            <h2>🎂 Birthdays</h2>
+            <p>Make your special day unforgettable with creative themes and setups.</p>
+        </div>
+        <div class="box">
+            <h2>🏢 Corporate Events</h2>
+            <p>Professional arrangements with a touch of elegance and style.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Sugam’s Event | All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html> /* ========== General Reset ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ========== Body ========== */
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+/* ========== Header / Navigation ========== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    padding: 15px 40px;
+    border-bottom: 2px solid #c00;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #c00;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #c00;
+}
+
+/* ========== Hero Section ========== */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('images/event-bg.jpg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #c00;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #c00;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #900;
+}
+
+/* ========== Highlights Section ========== */
+.highlights {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 60px 20px;
+    background-color: #111;
+}
+
+.box {
+    background-color: #222;
+    border: 2px solid #c00;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 300px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    background-color: #333;
+}
+
+.box h2 {
+    color: #c00;
+    margin-bottom: 10px;
+}
+
+/* ========== Footer ========== */
+footer {
+    background-color: #111;
+    text-align: center;
+    padding: 15px;
+    border-top: 2px solid #c00;
+    font-size: 14px;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+    .highlights {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Sugam’s Event</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Sugam’s Event</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="booking.html">Book Event</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <h1>About Sugam’s Event</h1>
+        <p>
+            Sugam’s Event is a professional event organizing company that believes every celebration deserves to be perfect. 
+            We specialize in event planning, decoration, sound & lighting, catering, and complete management services for all types of events.
+        </p>
+        <p>
+            From weddings to birthdays, from corporate parties to small gatherings — our goal is simple:
+            <strong>“Make every event memorable.”</strong>
+        </p>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission">
+        <h2>Our Mission</h2>
+        <p>
+            To deliver top-quality event experiences that reflect creativity, class, and perfection — all handled with professionalism and passion.
+        </p>
+    </section>
+
+    <!-- Founder Section -->
+    <section class="founder">
+        <img src="images/founder.jpg" alt="Founder Image">
+        <div class="founder-info">
+            <h2>Meet the Founder</h2>
+            <p>
+                Sugam Kumar, the founder of Sugam’s Event, started this company with a dream — 
+                to create unforgettable moments for people through flawless event execution.
+            </p>
+            <p>
+                With a young and energetic team, Sugam’s Event has organized multiple events across the region, 
+                earning a name for creativity and reliability.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Sugam’s Event | All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Sugam’s Event</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Sugam’s Event</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="booking.html">Book Event</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Services Section -->
+    <section class="services">
+        <h1>Our Services</h1>
+        <p class="intro">
+            At Sugam’s Event, we provide complete event management solutions. 
+            From grand weddings to professional corporate events — we handle everything with perfection.
+        </p>
+
+        <div class="service-list">
+            <div class="service-box">
+                <img src="images/wedding.jpg" alt="Wedding Decoration">
+                <h2>Wedding & Engagement Events</h2>
+                <p>We create stunning decorations and perfect arrangements to make your wedding a lifetime memory.</p>
+            </div>
+
+            <div class="service-box">
+                <img src="images/birthday.jpg" alt="Birthday Event">
+                <h2>Birthday Celebrations</h2>
+                <p>From themes to decorations, we make every birthday special and joyful.</p>
+            </div>
+
+            <div class="service-box">
+                <img src="images/corporate.jpg" alt="Corporate Event">
+                <h2>Corporate Events</h2>
+                <p>Professional event setup with class and creativity to match your brand’s identity.</p>
+            </div>
+
+            <div class="service-box">
+                <img src="images/decor.jpg" alt="Decoration">
+                <h2>Stage & Venue Decoration</h2>
+                <p>Creative stage designs and premium décor to give your event a perfect atmosphere.</p>
+            </div>
+
+            <div class="service-box">
+                <img src="images/dj.jpg" alt="DJ Music">
+                <h2>DJ & Music Setup</h2>
+                <p>High-quality sound and lighting setup to make every celebration come alive.</p>
+            </div>
+
+            <div class="service-box">
+                <img src="images/catering.jpg" alt="Catering">
+                <h2>Catering & Photography</h2>
+                <p>Delicious food and professional photography to capture your best moments.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Sugam’s Event | All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Sugam’s Event</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Sugam’s Event</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="booking.html">Book Event</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <h1>Our Event Gallery</h1>
+        <p>Some glimpses of the beautiful events we’ve organized with love and perfection.</p>
+
+        <div class="gallery-grid">
+            <img src="images/gallery1.jpg" alt="Event 1">
+            <img src="images/gallery2.jpg" alt="Event 2">
+            <img src="images/gallery3.jpg" alt="Event 3">
+            <img src="images/gallery4.jpg" alt="Event 4">
+            <img src="images/gallery5.jpg" alt="Event 5">
+            <img src="images/gallery6.jpg" alt="Event 6">
+            <img src="images/gallery7.jpg" alt="Event 7">
+            <img src="images/gallery8.jpg" alt="Event 8">
+            <img src="images/gallery9.jpg" alt="Event 9">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Sugam’s Event | All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+/* ========== Gallery Page ========== */
+.gallery {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #111;
+}
+
+.gallery h1 {
+    color: #c00;
+    margin-bottom: 10px;
+}
+
+.gallery p {
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 0 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border: 2px solid #c00;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+    border-color: #900;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Event | Sugam’s Event</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Sugam’s Event</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="booking.html" class="active">Book Event</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Booking Section -->
+    <section class="booking">
+        <h1>Book Your Event</h1>
+        <p>Fill out the form below and our team will get in touch with you soon!</p>
+
+        <form class="booking-form" action="mailto:sugamsevent@gmail.com" method="post" enctype="text/plain">
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" name="phone" placeholder="Enter your number" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" name="email" placeholder="Enter your email">
+            </div>
+
+            <div class="form-group">
+                <label>Event Type</label>
+                <select name="event-type" required>
+                    <option value="">Select Event Type</option>
+                    <option>Wedding</option>
+                    <option>Birthday</option>
+                    <option>Corporate</option>
+                    <option>Decoration</option>
+                    <option>DJ / Music</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Event Date</label>
+                <input type="date" name="event-date" required>
+            </div>
+
+            <div class="form-group">
+                <label>Message</label>
+                <textarea name="message" rows="5" placeholder="Any special request or detail..."></textarea>
+            </div>
+
+            <button type="submit" class="btn">Submit Booking</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Sugam’s Event | All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Event | Sugam’s Event</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Sugam’s Event</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="booking.html" class="active">Book Event</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Booking Section -->
+    <section class="booking">
+        <h1>Book Your Event</h1>
+        <p>Fill out the form below and our team will get in touch with you soon!</p>
+
+        <form class="booking-form" action="mailto:sugamsevent@gmail.com" method="post" enctype="text/plain">
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" name="phone" placeholder="Enter your number" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" name="email" placeholder="Enter your email">
+            </div>
+
+            <div class="form-group">
+                <label>Event Type</label>
+                <select name="event-type" required>
+                    <option value="">Select Event Type</option>
+                    <option>Wedding</option>
+                    <option>Birthday</option>
+                    <option>Corporate</option>
+                    <option>Decoration</option>
+                    <option>DJ / Music</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Event Date</label>
+                <input type="date" name="event-date" required>
+            </div>
+
+            <div class="form-group">
+                <label>Message</label>
+                <textarea name="message" rows="5" placeholder="Any special request or detail..."></textarea>
+            </div>
+
+            <button type="submit" class="btn">Submit Booking</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Sugam’s Event | All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+/* ========== Booking Page ========== */
+.booking {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #111;
+}
+
+.booking h1 {
+    color: #c00;
+    margin-bottom: 10px;
+}
+
+.booking p {
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.booking-form {
+    max-width: 600px;
+    margin: auto;
+    background-color: #222;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid #c00;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #c00;
+    outline: none;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Sugam’s Event</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Sugam’s Event</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="booking.html">Book Event</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h1>Get in Touch</h1>
+        <p>We’d love to hear from you! Contact us for bookings, queries, or collaborations.</p>
+
+        <div class="contact-container">
+
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p><strong>📞 Phone:</strong> <a href="tel:+919229853831">+91 92298 53831</a></p>
+                <p><strong>📧 Email:</strong> <a href="mailto:sugamsevent@gmail.com">sugamsevent@gmail.com</a></p>
+                <p><strong>📍 Address:</strong> Naugachhiya, Bhagalpur, Bihar, India</p>
+                <p><strong>🕐 Working Hours:</strong> 9:00 AM – 9:00 PM (Mon–Sun)</p>
+            </div>
+
+            <!-- Contact Form -->
+            <form class="contact-form" action="mailto:sugamsevent@gmail.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label>Your Name</label>
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Your Email</label>
+                    <input type="email" name="email" placeholder="Enter your email">
+                </div>
+
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea name="message" rows="5" placeholder="Write your message..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Sugam’s Event | All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+/* ========== Contact Page ========== */
+.contact {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #111;
+}
+
+.contact h1 {
+    color: #c00;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.contact-info {
+    background-color: #222;
+    border: 2px solid #c00;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 400px;
+    text-align: left;
+}
+
+.contact-info a {
+    color: #c00;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-form {
+    background-color: #222;
+    border: 2px solid #c00;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 400px;
+    text-align: left;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    color: #fff;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #000;
+    color: #fff;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #c00;
+    outline: none;
+}
